@@ -1,0 +1,64 @@
+@import "../../App";
+
+.section__hero {
+  position: relative;
+
+  .bg {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero {
+    position: absolute;
+    top: 0;
+    padding: 5vw 0 0 6vw;
+    border-radius: 20px;
+
+    &__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 4vw;
+      color: $white;
+    }
+
+    &__subtitle {
+      max-width: 35vw;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.8vw;
+      opacity: .9;
+      line-height: 1.6;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $white;
+      margin-top: 2vw;
+    }
+
+    &__btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      background: $primary;
+      box-shadow: 0 4px 0 #1F252E;
+      border-radius: 5px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.5vw;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 0 1vw 0 3vw;
+      margin-top: 2vw;
+    }
+    img {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+
+  .btn {
+
+  }
+}
+
+

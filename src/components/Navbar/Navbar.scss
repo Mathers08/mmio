@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 12px 0;
+  gap: 70px;
+  @media screen and (max-width: 1100px) {
+    gap: 50px;
+  }
+
+  &__item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+    @media screen and (max-width: 1050px) {
+      font-size: 14px;
+    }
+    &-submenu {
+      display: none;
+      position: absolute;
+      width: 400px;
+    }
+    &:hover {
+      .navbar__item-submenu {
+        display: block;
+      }
+    }
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
