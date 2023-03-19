@@ -19,18 +19,37 @@
     display: flex;
     align-items: center;
     position: relative;
+
     img {
       width: 25px;
       height: 25px;
     }
+
     @media screen and (max-width: 1050px) {
       font-size: 14px;
     }
+
     &-submenu {
       display: none;
       position: absolute;
-      width: 400px;
+      width: 200px;
+      z-index: 1000;
+      top: 25px;
+      background-color: #f8f8f8;
+      border-radius: 15px;
+
+      .submenu-item {
+        margin: 10px;
+        border-bottom: 1px solid #bdbaba;
+
+        a {
+          text-transform: initial;
+          font-size: 16px;
+          background: transparent;
+        }
+      }
     }
+
     &:hover {
       .navbar__item-submenu {
         display: block;

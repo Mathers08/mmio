@@ -42,7 +42,7 @@ const Navbar = () => {
           {obj.subItems && <div className="navbar__item-submenu">
             {obj.subItems.map((item) => (
               <div className='submenu-item'>
-                <button>{item}</button>
+                <a>{item}</a>
               </div>
             ))}
           </div>}

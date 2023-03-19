@@ -24,6 +24,7 @@ $fontSecondary: '';
   padding: 0;
   margin: 0;
   border: 0;
+
 }
 
 *,
@@ -123,13 +124,20 @@ h6 {
   }
 }
 
-// Animations
-// Fade
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.page__header {
+  font-size: 40px;
+  margin: 0 0 30px 20px;
+  width: 430px;
+  border-bottom: 5px solid $primary;
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+}
+
+.link-btn {
+  font-size: 18px;
+  font-weight: 900;
+  background-color: $primary;
+  color: $white;
+  padding: 10px 20px;
+  border-radius: 30px;
 }

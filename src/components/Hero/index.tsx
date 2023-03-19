@@ -1,16 +1,22 @@
 import React from 'react';
 import './Hero.scss';
-import { hero } from '../../assets';
 
 const Hero = () => {
   return (
-    <section className="section__hero">
-        <img src={hero} className="bg" alt="bg"/>
-        <div className="hero">
-          <div className="hero__title">Автозапчасти</div>
-          <div className="hero__subtitle">для автомобилей марок ГАЗ, ВАЗ, КАМАЗ, ПАЗ и УАЗ</div>
-          <button className="btn hero__btn">Перейти</button>
+    <section className="hero">
+      <div className="info">
+        <div className="info__main">
+          <div className="info__main-greet">
+            <div className="greet-title">Добро пожаловать!</div>
+            <p className="greet-subtitle">Кафедра математических методов исследования операций</p>
+          </div>
+          <div className="info__main-link">
+            <div className="link-text">Подробнее о кафедре</div>
+            <button className="link-btn">Перейти</button>
+          </div>
         </div>
+        <p className="info__text">ММИО</p>
+      </div>
     </section>
   );
 };
