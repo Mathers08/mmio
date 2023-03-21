@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import MainNews from "./components/MainNews";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Navbar/>
         <Hero/>
         <MainNews/>
+        <About/>
         <Footer/>
       </div>
     </div>

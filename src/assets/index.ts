@@ -6,3 +6,4 @@ export { default as chevron } from './chevron.svg';
 export { default as burger } from './burger.svg';
 export { default as hero } from './hero.png';
 export { default as actual1 } from './actual1.png';
+export { default as info } from './info.png';
