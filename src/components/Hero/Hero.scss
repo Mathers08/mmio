@@ -11,6 +11,8 @@
   height: 500px;
   border-radius: 35px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 
   .info {
     color: $white;
@@ -47,6 +49,37 @@
     &__text {
       font-size: 72px;
     }
+  }
+
+  .scroll-down {
+    color: aliceblue;
+    width: 20rem;
+    text-align: center;
+    margin: auto auto 15px auto;
+
+    h4 {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    img {
+      width: 45px;
+      height: 45px;
+      animation: arrow-jump 2s infinite;
+    }
+  }
+}
+
+@keyframes arrow-jump {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 15px;
+  }
+  100% {
+    margin-top: 0;
   }
 }
 

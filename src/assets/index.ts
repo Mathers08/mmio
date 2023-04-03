@@ -7,3 +7,5 @@ export { default as burger } from './burger.svg';
 export { default as hero } from './hero.png';
 export { default as actual1 } from './actual1.png';
 export { default as info } from './info.png';
+export { default as wave } from './wave.png';
+export { default as arrowDown } from './arrow-down.svg';

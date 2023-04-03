@@ -1,12 +1,13 @@
 @import "../../App";
 
-.footer__block {
+footer {
   background-color: #e5e5e5;
   margin-top: 50px;
   padding: 40px 0;
 
   .footer {
     display: flex;
+    justify-content: center;
     @media screen and (max-width: 740px) {
       flex-direction: column;
     }

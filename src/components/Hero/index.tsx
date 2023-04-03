@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.scss';
+import { arrowDown } from "../../assets";
 
 const Hero = () => {
   return (
@@ -16,6 +17,10 @@ const Hero = () => {
           </div>
         </div>
         <p className="info__text">ММИО</p>
+      </div>
+      <div className="scroll-down">
+        <h4>О направлении бизнес-информатика</h4>
+        <img src={arrowDown} alt=""/>
       </div>
     </section>
   );
