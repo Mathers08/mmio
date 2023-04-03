@@ -4,7 +4,7 @@ import { address, logo, phone, time } from "../../assets";
 
 const Footer = () => {
   return (
-    <footer className="footer__block">
+    <footer>
       <div className="container">
         <div className="footer">
           <div className="footer__left">

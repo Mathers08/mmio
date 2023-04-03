@@ -129,9 +129,17 @@ h6 {
   font-size: 40px;
   margin: 0 0 30px 20px;
   width: 430px;
-  border-bottom: 5px solid $primary;
   font-family: Rubik, sans-serif;
   font-weight: 700;
+  &::after {
+    content: "";
+    width: inherit;
+    height: 5px;
+    display: block;
+    position: absolute;
+    background: #1768bb;
+    margin-top: 5px;
+  }
 }
 
 .link-btn {
@@ -141,4 +149,14 @@ h6 {
   color: $white;
   padding: 10px 20px;
   border-radius: 30px;
+}
+
+.outline-btn {
+  font-size: 18px;
+  font-weight: 900;
+  color: $primary;
+  background-color: $white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px $primary solid;
 }

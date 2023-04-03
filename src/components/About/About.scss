@@ -1,77 +1,94 @@
 @import "../../App";
 
-.about {
+.about-wrapper {
+  background: #e5e5e5;
   margin-top: 50px;
-  position: relative;
 
-  &__title {
-    display: flex;
-    flex-direction: column;
-    font-weight: 700;
-    align-items: center;
-    margin: 0 auto;
-    gap: 20px;
-    max-width: 700px;
-    line-height: 1;
-    font-size: 44px;
-
-    &-text {
-      width: 50%;
-      height: 5px;
-      background: $primary;
-    }
-  }
-
-  &__block {
-    display: flex;
-    margin-top: 40px;
-    flex-direction: column;
-    gap: 50px;
+  .about {
     position: relative;
-    z-index: 1;
+    padding: 50px 0;
 
-    :not(:first-child):nth-child(odd) {
-      margin-left: auto;
-    }
-
-    &-item {
-      width: 48%;
+    &__title {
       display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      align-items: center;
+      margin: 0 auto;
       gap: 20px;
+      max-width: 700px;
+      line-height: 1;
+      font-size: 44px;
 
-      img {
-        height: 65px;
-        width: 65px;
+      span {
+        color: $primary;
+      }
+
+      &-line {
+        width: 50%;
+        height: 5px;
+        background: $primary;
       }
     }
 
-    .line {
-      border-left: 6px solid $primary;
-      height: 110%;
-      position: absolute;
-      left: 50%;
-      margin-top: -40px;
+    &__block {
+      display: flex;
+      margin-top: 40px;
+      flex-direction: column;
+      gap: 50px;
+      position: relative;
+      z-index: 1;
+
+      :not(:first-child):nth-child(odd) {
+        margin-left: auto;
+      }
+
+      &-item {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: linear-gradient(45deg, #fff, #595fd0);
+        padding: 20px;
+        border-radius: 20px;
+        img {
+          height: 65px;
+          width: 65px;
+        }
+      }
+
+      &-wave {
+        position: absolute;
+        left: 48%;
+        height: 116%;
+        top: -43px;
+        /*
+        border-left: 6px solid $primary;
+        height: 110%;
+        position: absolute;
+        left: 50%;
+        margin-top: -40px;*/
+      }
     }
-  }
 
-  &__circle {
-    position: absolute;
-    width: 522px;
-    height: 500px;
-    background: linear-gradient(45deg, #b867e2, #1a208b);
-    border-radius: 50%;
-    filter: blur(150px);
-  }
+    &__circle {
+      position: absolute;
+      width: 522px;
+      height: 500px;
+      background: linear-gradient(45deg, #2c6dd5, #5effcf);
+      border-radius: 50%;
+      filter: blur(250px);
+    }
 
-  .circle-right {
-    top: 150px;
-    right: -400px;
-  }
+    .circle-right {
+      top: 150px;
+      right: -400px;
+    }
 
-  .circle-left {
-    transform: rotate(180deg);
-    bottom: 150px;
-    left: -400px;
+    .circle-left {
+      transform: rotate(180deg);
+      bottom: 150px;
+      left: -400px;
+    }
   }
 }
 

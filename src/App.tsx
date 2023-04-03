@@ -8,15 +8,17 @@ import About from "./components/About";
 
 const App = () => {
   return (
-    <div className='main__body'>
-      <div className='container'>
+    <div className="main__body">
+      <div className="container">
         <Header/>
         <Navbar/>
         <Hero/>
-        <MainNews/>
-        <About/>
-        <Footer/>
       </div>
+      <About/>
+      <div className="container">
+        <MainNews/>
+      </div>
+      <Footer/>
     </div>
   );
 };
