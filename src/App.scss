@@ -11,6 +11,8 @@ $breakpoint480: 479.98+px;
 $primary: #1768bb;
 $black: #000;
 $white: #fff;
+$gray: #e5e5e5;
+
 
 // Burger Menu
 $burgerBreakpoint: $breakpoint992;
@@ -126,37 +128,50 @@ h6 {
 }
 
 .page__header {
+  text-align: center;
   font-size: 40px;
-  margin: 0 0 30px 20px;
-  width: 430px;
-  font-family: Rubik, sans-serif;
   font-weight: 700;
-  &::after {
+  position: relative;
+
+  &::before, &::after {
     content: "";
-    width: inherit;
-    height: 5px;
-    display: block;
     position: absolute;
-    background: #1768bb;
-    margin-top: 5px;
+    top: 50%;
+    width: 32%;
+    height: 5px;
+    background-color: $primary;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+@mixin main-btn($main-color, $sec-color) {
+  font-size: 18px;
+  font-weight: 900;
+  background-color: $main-color;
+  color: $sec-color;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px $sec-color solid;
+  transition: .2s all ease-in;
+
+  &:hover {
+    background-color: $sec-color;
+    color: $main-color;
+    border: 1px $main-color solid;
   }
 }
 
 .link-btn {
-  font-size: 18px;
-  font-weight: 900;
-  background-color: $primary;
-  color: $white;
-  padding: 10px 20px;
-  border-radius: 30px;
+  @include main-btn($primary, $white);
 }
 
 .outline-btn {
-  font-size: 18px;
-  font-weight: 900;
-  color: $primary;
-  background-color: $white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  border: 1px $primary solid;
+  @include main-btn($white, $primary);
 }

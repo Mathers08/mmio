@@ -1,24 +1,25 @@
 import './App.scss';
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import MainNews from "./components/MainNews";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import About from "./components/About";
+import React, { useRef } from "react";
+import { About, BI, Footer, Header, Hero, MainNews, Navbar } from "./components";
 
 const App = () => {
+  const biRef = useRef<HTMLInputElement | null>(null);
+
+  const onBIClick = () => biRef.current?.scrollIntoView({ behavior: 'smooth' });
+
   return (
     <div className="main__body">
       <div className="container">
-        <Header/>
-        <Navbar/>
-        <Hero/>
+        <Header />
+        <Navbar />
+        <Hero onBIClick={onBIClick} />
       </div>
-      <About/>
+      <About />
       <div className="container">
-        <MainNews/>
+        <BI biRef={biRef} />
+        <MainNews />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

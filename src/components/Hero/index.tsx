@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './Hero.scss';
 import { arrowDown } from "../../assets";
 
-const Hero = () => {
+interface HeroProps {
+  onBIClick: () => void;
+}
+
+const Hero: FC<HeroProps> = ({ onBIClick }) => {
   return (
     <section className="hero">
       <div className="info">
@@ -18,7 +22,7 @@ const Hero = () => {
         </div>
         <p className="info__text">ММИО</p>
       </div>
-      <div className="scroll-down">
+      <div onClick={onBIClick} className="scroll-down">
         <h4>О направлении бизнес-информатика</h4>
         <img src={arrowDown} alt=""/>
       </div>

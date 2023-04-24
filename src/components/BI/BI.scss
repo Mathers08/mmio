@@ -1,0 +1,60 @@
+@import "../../App";
+
+.bi {
+  margin-top: 50px;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    width: 40%;
+    height: 95%;
+    opacity: 0.2;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+  }
+
+  &__content {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    gap: 25px;
+
+    &-item {
+      width: 40%;
+
+      img {
+        height: 65px;
+        width: 65px;
+      }
+
+      h4 {
+        font-size: 28px;
+        color: $primary;
+        font-weight: 700;
+        margin-top: 8px;
+      }
+
+      p {
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: .4px;
+
+        span {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

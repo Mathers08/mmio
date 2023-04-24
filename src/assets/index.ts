@@ -9,3 +9,5 @@ export { default as actual1 } from './actual1.png';
 export { default as info } from './info.png';
 export { default as wave } from './wave.png';
 export { default as arrowDown } from './arrow-down.svg';
+export { default as vsu } from './vsu.png';
+export { default as gerb } from './gerb.jpg';
