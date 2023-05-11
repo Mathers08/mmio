@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import './Hero.scss';
 import { arrowDown } from "../../assets";
+import { Link } from "react-router-dom";
 
 interface HeroProps {
   onBIClick: () => void;
@@ -16,15 +17,16 @@ const Hero: FC<HeroProps> = ({ onBIClick }) => {
             <p className="greet-subtitle">Кафедра математических методов исследования операций</p>
           </div>
           <div className="info__main-link">
-            <div className="link-text">Подробнее о кафедре</div>
-            <button className="link-btn">Перейти</button>
+            <div className="main-text">Подробная информация</div>
+            <div>
+              <Link to="/professors">
+                <button className="main-btn">О кафедре</button>
+              </Link>
+              <button style={{ marginLeft: 15 }} onClick={onBIClick} className="main-btn">Бизнес-Информатика</button>
+            </div>
           </div>
         </div>
         <p className="info__text">ММИО</p>
-      </div>
-      <div onClick={onBIClick} className="scroll-down">
-        <h4>О направлении бизнес-информатика</h4>
-        <img src={arrowDown} alt=""/>
       </div>
     </section>
   );

@@ -1,0 +1,46 @@
+@import "../App";
+
+.nir {
+  margin: 50px 0;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: .8px;
+  text-indent: 20px;
+
+  &__text {
+    margin: 20px;
+
+    &-img {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+    }
+  }
+
+  &__info {
+    margin: 20px;
+
+    ol {
+      margin: 15px 70px;
+    }
+
+    &-links {
+      margin: 20px 0 0 50px;
+
+      .link-item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+
+}

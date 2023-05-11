@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.scss';
-import { info, wave } from "../../assets";
+import { info, tmp, wave } from "../../assets";
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
             <img className="about__block-wave" src={wave} alt="" />
             {Array.from({ length: 4 }, (_, index) => (
               <div className="about__block-item">
-              <img src={info} alt=""/>
+              <img src={tmp} alt=""/>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Aperiam dolor doloremque nostrum provident. A
               architecto deserunt, dolor quos soluta voluptas!
@@ -25,8 +25,8 @@ const About = () => {
               </div>
               ))}
           </div>
-          <div className="about__circle circle-right"/>
-          <div className="about__circle circle-left"/>
+          <div className="circle circle-right"/>
+          <div className="circle circle-left"/>
         </div>
       </div>
     </section>

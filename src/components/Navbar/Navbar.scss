@@ -9,6 +9,7 @@
   }
 
   &__item {
+    position: relative;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -18,7 +19,11 @@
     color: #000;
     display: flex;
     align-items: center;
-    position: relative;
+    cursor: pointer;
+
+   /* & > * {
+      cursor: initial;
+    }*/
 
     img {
       width: 25px;
@@ -46,6 +51,7 @@
           text-transform: initial;
           font-size: 16px;
           background: transparent;
+          cursor: pointer;
         }
       }
     }

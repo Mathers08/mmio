@@ -3,7 +3,7 @@ import './BI.scss';
 import { gerb, info } from "../../assets";
 
 interface BIProps {
-  biRef: LegacyRef<HTMLElement> | undefined;
+  biRef?: LegacyRef<HTMLElement>;
 }
 
 const BI: FC<BIProps> = ({ biRef }) => {
@@ -33,7 +33,7 @@ const BI: FC<BIProps> = ({ biRef }) => {
   return (
     <section ref={biRef} className="bi">
       <img className="bi__bg" src={gerb} alt="" />
-      <h1 className="page__header">Бизнес-информатика</h1>
+      <h1 className="page__header"><span>Бизнес-информатика</span></h1>
       <div className="bi__content">
         {biItems.map(obj => (
           <div className="bi__content-item">

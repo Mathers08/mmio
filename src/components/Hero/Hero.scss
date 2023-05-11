@@ -1,9 +1,8 @@
 @import "../../App";
-@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
 
 .hero {
   position: relative;
-  background-image: url("../../assets/hero.png");
+  background-image: url("../../assets/hero/hero5.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,6 +12,7 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  line-height: 1;
 
   .info {
     color: $white;
@@ -39,9 +39,22 @@
       }
 
       &-link {
-        .link-text {
+        .main-text {
           font-size: 30px;
           margin-bottom: 20px;
+        }
+
+        .main-btn {
+          font-size: 18px;
+          font-weight: 900;
+          background-color: $primary;
+          color: $white;
+          padding: 10px 20px;
+          border-radius: 30px;
+          transition: .2s all ease-in;
+          &:hover {
+            background-color: #1768bb50;
+          }
         }
       }
     }
@@ -53,7 +66,7 @@
 
   .scroll-down {
     color: aliceblue;
-    width: 20rem;
+    width: 22rem;
     text-align: center;
     margin: auto auto 15px auto;
     cursor: pointer;
@@ -77,7 +90,7 @@
     margin-top: 0;
   }
   50% {
-    margin-top: 15px;
+    margin-top: 10px;
   }
   100% {
     margin-top: 0;

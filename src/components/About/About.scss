@@ -70,25 +70,6 @@
       }
     }
 
-    &__circle {
-      position: absolute;
-      width: 522px;
-      height: 500px;
-      background: linear-gradient(45deg, #2c6dd5, #5effcf);
-      border-radius: 50%;
-      filter: blur(250px);
     }
-
-    .circle-right {
-      top: 150px;
-      right: -400px;
-    }
-
-    .circle-left {
-      transform: rotate(180deg);
-      bottom: 150px;
-      left: -400px;
-    }
-  }
 }
 

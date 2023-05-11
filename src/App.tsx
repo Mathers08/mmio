@@ -1,25 +1,23 @@
+import React from "react";
 import './App.scss';
-import React, { useRef } from "react";
-import { About, BI, Footer, Header, Hero, MainNews, Navbar } from "./components";
+import { Route, Routes } from "react-router-dom";
+import { Home, Nir, Professors } from "./pages";
+import { Header, Navbar } from "./components";
 
 const App = () => {
-  const biRef = useRef<HTMLInputElement | null>(null);
-
-  const onBIClick = () => biRef.current?.scrollIntoView({ behavior: 'smooth' });
-
   return (
     <div className="main__body">
-      <div className="container">
-        <Header />
-        <Navbar />
-        <Hero onBIClick={onBIClick} />
+      <div style={{ height: 180 }}>
+        <div className="container">
+          <Header />
+          <Navbar />
+        </div>
       </div>
-      <About />
-      <div className="container">
-        <BI biRef={biRef} />
-        <MainNews />
-      </div>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/professors" element={<Professors />} />
+        <Route path="/nir" element={<Nir />} />
+      </Routes>
     </div>
   );
 };

@@ -1,29 +1,71 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
 import { chevron } from '../../assets';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navbarItems = [
     {
-      item: 'Главная'
+      item: 'Главная',
+      link: '/'
     },
     {
-      item: 'Новости'
+      item: 'Новости',
+      link: '/news'
     },
     {
       item: 'Студентам',
-      subItems: ['Расписание', 'Расписание сессии', 'Летняя практика']
+      subItems: [
+        {
+          item: 'Расписание занятий',
+          link: '/schedule'
+        },
+        {
+          item: 'Расписание сессии',
+          link: '/schedule-session'
+        },
+        {
+          item: 'Летняя практика',
+          link: '/practice'
+        }
+      ],
+      link: ''
     },
     {
       item: 'Выпускникам',
-      subItems: ['Расписание', 'Расписание сессии', 'Научно-исследовательская работа', 'Производственная практика', 'Диплом']
+      subItems: [
+        {
+          item: 'НИР',
+          link: '/nir'
+        },
+        {
+          item: 'ПП',
+          link: '/pp'
+        },
+        {
+          item: 'Диплом',
+          link: '/dip'
+        },
+      ],
+      link: ''
     },
     {
       item: 'О кафедре',
-      subItems: ['История', 'Преподаватели']
+      subItems: [
+        {
+          item: 'История',
+          link: '/history'
+        },
+        {
+          item: 'Преподаватели',
+          link: '/professors'
+        }
+      ],
+      link: ''
     },
     {
       item: 'Сотрудничество',
+      link: '/collaboration'
     },
   ];
   const [isOpen, setIsOpen] = useState(false);
@@ -37,12 +79,12 @@ const Navbar = () => {
       <button className={`burger ${isOpen ? 'open' : ''}`} onClick={toggleIsOpen}></button>
       {navbarItems.map((obj) => (
         <div className="navbar__item">
-          {obj.item}
-          {obj.subItems && <img src={chevron} alt=""/>}
+          <Link to={obj.link}>{obj.item}</Link>
+          {obj.subItems && <img src={chevron} alt="" />}
           {obj.subItems && <div className="navbar__item-submenu">
-            {obj.subItems.map((item) => (
-              <div className='submenu-item'>
-                <a>{item}</a>
+            {obj.subItems.map((obj) => (
+              <div className="submenu-item">
+                <Link to={obj.link}>{obj.item}</Link>
               </div>
             ))}
           </div>}
