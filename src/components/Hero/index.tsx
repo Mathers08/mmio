@@ -21,7 +21,7 @@ const Hero: FC<HeroProps> = ({ onBIClick }) => {
               <Link to="/info">
                 <button className="main-btn">О кафедре</button>
               </Link>
-              <button style={{ marginLeft: 15 }} onClick={onBIClick} className="main-btn">Бизнес-Информатика</button>
+              <button style={{ marginLeft: 15 }} onClick={onBIClick} className="main-btn">Бизнес-информатика</button>
             </div>
           </div>
         </div>

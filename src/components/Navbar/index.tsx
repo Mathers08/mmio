@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
-import { chevron, info, tmp } from '../../assets';
+import { chevron, tmp, info } from '../../assets';
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
         },
         {
           item: 'ПП',
-          link: '/pp'
+          link: '/practice'
         },
         {
           item: 'Диплом',
@@ -82,7 +82,7 @@ const Navbar = () => {
           {obj.subItems && <div className="navbar__item-submenu">
             {obj.subItems.map((obj) => (
               <Link to={obj.link}>
-                <img src={tmp} alt="" />
+                <img src={info} alt="" />
                 <div className="submenu-item">{obj.item}</div>
               </Link>
             ))}

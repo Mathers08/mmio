@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import { nir_example, nir_rules, nir_title, pdf, tmp, word } from "../assets";
+import { nir_example, nir_rules, nir_title, pdf, info, word } from "../assets";
 
 const Nir = () => {
   return (
@@ -10,12 +10,12 @@ const Nir = () => {
           <span>Научно-исследовательская работа</span>
         </h1>
 
-        <div className="nir__info">
+        <div className="nir__first">
           <h2 className="page__subheader">
             <span>Информация о НИР</span>
           </h2>
-          <div className="nir__info-item">
-            <img className="text-img" src={tmp} alt="" />
+          <div className="nir__first-item">
+            <img className="text-img" src={info} alt="" />
             <p>
               Обязательными программами по всем специальностям факультета
               прикладной математики, информатики и механики Воронежского государственного университета предусмотрено
@@ -29,12 +29,12 @@ const Nir = () => {
           </div>
         </div>
 
-        <div className="nir__rules">
+        <div className="nir__second">
           <h2 className="page__subheader">
             <span>Требования к НИР</span>
           </h2>
-            <div className="nir__rules-item">
-              <img className="text-img" src={tmp} alt="" />
+            <div className="nir__second-item">
+              <img className="text-img" src={info} alt="" />
               <div>
                 <p>Отчет по НИР за <strong>1 семестр 4-го курса</strong> должен содержать:</p>
                 <ol>
@@ -46,20 +46,20 @@ const Nir = () => {
                 <p>Оригинальность текста должна составлять не менее <strong>60</strong> процентов.</p>
               </div>
             </div>
-            <div className="nir__rules-links">
-              <div className="link-item">
-                <img src={pdf} alt="" />
-                <a href={nir_rules} target="_blank">НИР: правила оформления</a>
-              </div>
-              <div className="link-item">
-                <img src={pdf} alt="" />
-                <a href={nir_example} target="_blank">НИР: пример отчета</a>
-              </div>
-              <div className="link-item">
-                <img src={word} alt="" />
-                <a href={nir_title} download={nir_title}>НИР: титульный лист</a>
-              </div>
-            </div>
+        </div>
+        <div className="nir__links">
+          <div className="nir__links-item">
+            <img src={pdf} alt="" />
+            <a href={nir_rules} target="_blank">НИР: правила оформления</a>
+          </div>
+          <div className="nir__links-item">
+            <img src={pdf} alt="" />
+            <a href={nir_example} target="_blank">НИР: пример отчета</a>
+          </div>
+          <div className="nir__links-item">
+            <img src={word} alt="" />
+            <a href={nir_title} download={nir_title}>НИР: титульный лист</a>
+          </div>
         </div>
       </div>
     </div>

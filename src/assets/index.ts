@@ -8,8 +8,8 @@ export { default as burger } from './header/burger.svg';
 export { default as arrowDown } from './hero/arrow-down.svg';
 
 export { default as actual1 } from './news/actual1.png';
-export { default as info } from './about/info.png';
-export { default as tmp } from './about/tmp.svg';
+export { default as tmp } from './about/tmp.png';
+export { default as info } from './about/info.svg';
 
 export { default as wave } from './about/wave.png';
 

@@ -1,6 +1,6 @@
 @import "../App";
 
-.nir, .info {
+.nir, .info, .practice {
   margin: 30px 0;
   font-size: 20px;
   text-align: justify;
@@ -13,9 +13,8 @@
   }
 }
 
-.nir {
-
-  &__info {
+.nir, .practice {
+  &__first, &__third {
     margin-top: 25px;
 
     &-item {
@@ -25,36 +24,46 @@
     }
   }
 
-  &__rules {
+  &__second {
     margin-top: 25px;
-
-    ol {
-      margin: 15px 70px;
-    }
 
     &-item {
       display: flex;
       gap: 20px;
       margin-top: 20px;
     }
+  }
 
-    &-links {
-      margin: 20px 0 0 65px;
+  &__links {
+    margin: 20px 0 0 65px;
 
-      .link-item {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
 
-        &:not(:last-child) {
-          margin-bottom: 5px;
-        }
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
 
-        a {
-          color: $primary;
-        }
+      a {
+        color: $primary;
       }
     }
+  }
+}
+
+.nir {
+  &__second {
+    ol {
+      margin: 15px 70px;
+    }
+  }
+}
+
+.practice {
+  .item-paragraph {
+    margin-left: 30px;
   }
 }
 

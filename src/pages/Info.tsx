@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import { tmp } from "../assets";
+import { info } from "../assets";
 import { Link } from "react-router-dom";
 
 const Info = () => {
@@ -15,7 +15,7 @@ const Info = () => {
             <span>История кафедры</span>
           </h2>
           <div className='info__history-item'>
-            <img className="text-img" src={tmp} alt="" />
+            <img className="text-img" src={info} alt="" />
             <p>
               Кафедра ММИО основана в 1969 году. В 1974 году кафедра была переведена с экономического факультета в
               структуру
@@ -30,7 +30,7 @@ const Info = () => {
             <span>Описание работы кафедры</span>
           </h2>
           <div className='info__about-item'>
-            <img className="text-img" src={tmp} alt="" />
+            <img className="text-img" src={info} alt="" />
             <p>
               Преподаватели кафедры ведут основные курсы на факультете ПММ и курсы по математическому моделированию и
               прогнозированию на экономическом факультете. Кафедрой подготовлены такие курсы, как "Дискретная математика и

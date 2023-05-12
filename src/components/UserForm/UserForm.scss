@@ -9,10 +9,11 @@
     gap: 20px;
 
     &__input, &__text {
-      padding: 20px 30px;
+      padding: 20px;
       border: none;
       outline: none;
       border-radius: 15px;
+      font-size: 18px;
 
       &::placeholder {
         font-size: 18px;
