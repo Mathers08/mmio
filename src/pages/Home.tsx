@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { About, BI, Footer, Hero, MainNews } from "../components";
+import { About, BI, Hero, MainNews } from "../components";
 
 const Home = () => {
   const biRef = useRef<HTMLInputElement | null>(null);

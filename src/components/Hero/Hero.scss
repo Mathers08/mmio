@@ -1,6 +1,6 @@
 @import "../../App";
 
-.hero {
+.hero__section {
   position: relative;
   background-image: url("../../assets/hero/hero5.png");
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
   flex-direction: column;
   line-height: 1;
 
-  .info {
+  .hero {
     color: $white;
     padding-top: 70px;
     font-family: 'Rubik', sans-serif;

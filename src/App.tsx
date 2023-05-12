@@ -1,12 +1,12 @@
 import React from "react";
 import './App.scss';
 import { Route, Routes } from "react-router-dom";
-import { Home, Info, Nir, Professors } from "./pages";
+import { Collaboration, Home, Info, Nir, Professors } from "./pages";
 import { Footer, Header, Navbar } from "./components";
 
 const App = () => {
   return (
-    <div className="main__body">
+    <div className="wrapper">
       <div style={{ height: 180 }}>
         <div className="container">
           <Header />
@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/professors" element={<Professors />} />
         <Route path="/nir" element={<Nir />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/collaboration" element={<Collaboration />} />
       </Routes>
       <Footer />
     </div>

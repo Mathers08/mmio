@@ -16,6 +16,15 @@ $grey: #e5e5e5;
   box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 button {
   cursor: pointer;
 }
@@ -38,7 +47,7 @@ body {
   aspect-ratio: 100 / 29;
 }
 
-.main__body {
+.wrapper {
   padding-top: 15px;
   overflow: hidden;
 

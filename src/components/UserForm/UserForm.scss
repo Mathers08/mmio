@@ -1,0 +1,36 @@
+.userform__section {
+  position: relative;
+
+  .userform {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 30px 70px 30px auto;
+    gap: 20px;
+
+    &__input, &__text {
+      padding: 20px 30px;
+      border: none;
+      outline: none;
+      border-radius: 15px;
+
+      &::placeholder {
+        font-size: 18px;
+        font-family: 'PT Sans', sans-serif;
+      }
+    }
+
+    &__text {
+      resize: none;
+      height: 200px;
+    }
+  }
+
+  .form-img {
+    position: absolute;
+    width: 60%;
+    opacity: 0.2;
+    top: -10%;
+    z-index: -1;
+  }
+}

@@ -6,3 +6,4 @@ export { default as BI } from './BI';
 export { default as MainNews } from './MainNews';
 export { default as Footer } from './Footer';
 export { default as ProfessorsList } from './ProfessorsList';
+export { default as UserForm } from './UserForm';
