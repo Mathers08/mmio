@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
-import { chevron } from '../../assets';
+import { chevron, info, tmp } from '../../assets';
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
           link: '/practice'
         }
       ],
-      link: ''
+      link: window.location.pathname
     },
     {
       item: 'Выпускникам',
@@ -44,24 +44,24 @@ const Navbar = () => {
         },
         {
           item: 'Диплом',
-          link: '/dip'
+          link: '/diploma'
         },
       ],
-      link: ''
+      link: window.location.pathname
     },
     {
       item: 'О кафедре',
       subItems: [
         {
-          item: 'История',
-          link: '/history'
+          item: 'Информация',
+          link: '/info'
         },
         {
           item: 'Преподаватели',
           link: '/professors'
         }
       ],
-      link: ''
+      link: window.location.pathname
     },
     {
       item: 'Сотрудничество',
@@ -69,10 +69,8 @@ const Navbar = () => {
     },
   ];
   const [isOpen, setIsOpen] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
 
   const toggleIsOpen = () => setIsOpen(!isOpen);
-  const toggleIsHovered = () => setIsHovered(!isHovered);
 
   return (
     <nav className="navbar">
@@ -83,9 +81,10 @@ const Navbar = () => {
           {obj.subItems && <img src={chevron} alt="" />}
           {obj.subItems && <div className="navbar__item-submenu">
             {obj.subItems.map((obj) => (
-              <div className="submenu-item">
-                <Link to={obj.link}>{obj.item}</Link>
-              </div>
+              <Link to={obj.link}>
+                <img src={tmp} alt="" />
+                <div className="submenu-item">{obj.item}</div>
+              </Link>
             ))}
           </div>}
         </div>
@@ -95,56 +94,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-/*
-        <div className="navbar__item">
-          <button className="button">
-            Главная
-          </button>
-        </div>
-        <div className="navbar__item">
-          <button className="button">
-            Новости
-            <img src={chevron} alt=""/>
-          </button>
-        </div>
-        <div className="navbar__item">
-          <button className="button">
-            Студентам
-            <img src={chevron} alt=""/>
-          </button>
-          <div className="navbar__item-menu">
-            <button>Расписание</button>
-            <button>Рассписание сессии</button>
-            <button>Летняя практика</button>
-          </div>
-        </div>
-        <div className="navbar__item">
-          <button className="button">
-            Выпускникам
-            <img src={chevron} alt=""/>
-          </button>
-          <div className="navbar__item-menu">
-            <button>Расписание</button>
-            <button>Рассписание сессии</button>
-            <button>Научно-исследовательская работа</button>
-            <button>Производственная практика</button>
-            <button>Диплом</button>
-          </div>
-        </div>
-        <div className="navbar__item">
-          <button className="button">
-            О кафедре
-            <img src={chevron} alt=""/>
-          </button>
-          <div className="navbar__item-menu">
-            <button>История</button>
-            <button>Преподаватели</button>
-          </div>
-        </div>
-        <div className="navbar__item">
-          <button className="button">
-            Сотрудничество
-            <img src={chevron} alt=""/>
-          </button>
-        </div>*/

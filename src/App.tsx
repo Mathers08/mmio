@@ -1,8 +1,8 @@
 import React from "react";
 import './App.scss';
 import { Route, Routes } from "react-router-dom";
-import { Home, Nir, Professors } from "./pages";
-import { Header, Navbar } from "./components";
+import { Home, Info, Nir, Professors } from "./pages";
+import { Footer, Header, Navbar } from "./components";
 
 const App = () => {
   return (
@@ -17,7 +17,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/professors" element={<Professors />} />
         <Route path="/nir" element={<Nir />} />
+        <Route path="/info" element={<Info />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

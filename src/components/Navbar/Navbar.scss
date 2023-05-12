@@ -1,3 +1,5 @@
+@import "../../App";
+
 .navbar {
   display: flex;
   justify-content: end;
@@ -21,9 +23,9 @@
     align-items: center;
     cursor: pointer;
 
-   /* & > * {
-      cursor: initial;
-    }*/
+    /* & > * {
+       cursor: initial;
+     }*/
 
     img {
       width: 25px;
@@ -37,22 +39,46 @@
     &-submenu {
       display: none;
       position: absolute;
-      width: 200px;
+      width: 230px;
       z-index: 1000;
       top: 25px;
-      background-color: #f8f8f8;
+      background-color: #e5e5e5;
       border-radius: 15px;
+      padding: 5px 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          left: 0;
+          bottom: 5px;
+          right: 0;
+          height: 1px;
+          background: $black;
+          transition: cubic-bezier(.785, .135, .15, .86) .3s all;
+        }
+
+        &:hover {
+          &::after {
+            width: calc(100% - 15px);
+            transition: cubic-bezier(.785, .135, .15, .86) .3s all;
+          }
+        }
+      }
 
       .submenu-item {
         margin: 10px;
-        border-bottom: 1px solid #bdbaba;
-
-        a {
-          text-transform: initial;
-          font-size: 16px;
-          background: transparent;
-          cursor: pointer;
-        }
+        position: relative;
+        text-transform: initial;
+        font-size: 16px;
+        background: transparent;
+        cursor: pointer;
       }
     }
 

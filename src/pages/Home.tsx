@@ -16,7 +16,6 @@ const Home = () => {
         <BI biRef={biRef} />
         <MainNews />
       </div>
-      <Footer />
     </>
   );
 };

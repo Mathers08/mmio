@@ -7,7 +7,7 @@ $grey: #e5e5e5;
   padding: 0;
   margin: 0;
   border: 0;
-  transition: .4s all ease-in;
+  transition: .3s all ease-in;
 }
 
 *,
@@ -47,11 +47,21 @@ body {
   }
 }
 
-.page__header {
+.page__header, .page__subheader {
   text-align: center;
-  font-size: 40px;
   font-weight: 700;
   position: relative;
+
+  span {
+    position: relative;
+    z-index: 2;
+    background-color: #f8f8f8;
+    padding: 0 25px;
+  }
+}
+
+.page__header {
+  font-size: 40px;
 
   &::before, &::after {
     content: "";
@@ -70,12 +80,25 @@ body {
   &::after {
     right: 0;
   }
+}
 
-  span {
-    position: relative;
-    z-index: 2;
-    background-color: #f8f8f8;
-    padding: 0 25px;
+.page__subheader {
+  font-size: 32px;
+
+  &::before, &::after {
+    position: absolute;
+    color: $primary;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "< < < < < < < <";
+    left: 10%;
+  }
+
+  &::after {
+    content: "> > > > > > > >";
+    right: 10%;
   }
 }
 
