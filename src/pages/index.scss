@@ -14,17 +14,7 @@
 }
 
 .nir, .practice {
-  &__first, &__third {
-    margin-top: 25px;
-
-    &-item {
-      display: flex;
-      gap: 20px;
-      margin-top: 20px;
-    }
-  }
-
-  &__second {
+  &__first, &__second, &__third {
     margin-top: 25px;
 
     &-item {
@@ -89,6 +79,6 @@
   }
 }
 
-.collaboration {
+.collaboration, .schedule {
   margin-top: 30px;
 }

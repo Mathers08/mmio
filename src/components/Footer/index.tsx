@@ -58,7 +58,7 @@ const Footer = () => {
               <img src={address} alt="address" />
               <div className="item__info">
                 <div className="item__info-text">Адрес:</div>
-                <div className="item__info-strong">г. Воронеж, пл. Университетская, стр. 1, каб. 317, кафедра ММИО</div>
+                <div className="item__info-strong">г. Воронеж, Университетская пл. 1, каб. 317, кафедра ММИО</div>
               </div>
             </div>
           </div>
