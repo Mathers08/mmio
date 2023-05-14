@@ -81,7 +81,12 @@ footer {
           gap: 20px;
 
           p {
+            opacity: .6;
             cursor: pointer;
+
+            &:hover {
+              opacity: 1;
+            }
           }
         }
       }
