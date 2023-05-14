@@ -60,6 +60,8 @@ $cLightGray: rgba(#000, 0.1);
   }
 
   &__title {
+    width: 100%;
+    text-align: center;
     font-size: 1.6rem;
     margin: 0;
     font-weight: 700;
@@ -67,8 +69,8 @@ $cLightGray: rgba(#000, 0.1);
   }
 
   &__icon {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 2rem;
+    height: 2rem;
     transition: transform 0.3s ease-in-out;
     background-size: contain;
     background-repeat: no-repeat;
@@ -87,6 +89,9 @@ $cLightGray: rgba(#000, 0.1);
   }
 
   &__content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
     opacity: 0;
     transform: translateY(-1rem);
     transition-timing-function: linear, ease;

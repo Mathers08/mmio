@@ -49,9 +49,7 @@ const AccordionItem: FC<AccordionItemProps> = ({ title, paragraph }) => {
       </div>
       <div className="accordion-item__inner">
         <div className="accordion-item__content">
-          <p className="accordion-item__paragraph">
             {paragraph}
-          </p>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Navbar, ProfessorsList } from "../components";
+import { ProfessorsList } from "../components";
 
 const Professors = () => {
   return (

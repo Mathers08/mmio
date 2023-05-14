@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 35px;
-    margin: 40px 0 20px 0;
+    margin: 40px 0 20px;
 
     .actual {
       background-color: #e5e5e5;
@@ -20,6 +20,7 @@
 
       &__item {
         margin-top: 10px;
+
         &-title {
           font-weight: 700;
           font-size: 22px;
@@ -28,7 +29,6 @@
       }
     }
   }
-
   /*  .actual {
       margin-bottom: 30px;
       &__img {

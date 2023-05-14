@@ -1,6 +1,7 @@
 import React from 'react';
 import './MainNews.scss';
 import { actual1 } from "../../assets";
+import { Link } from "react-router-dom";
 
 const MainNews = () => {
   return (
@@ -19,7 +20,9 @@ const MainNews = () => {
           </div>
         ))}
       </div>
-      <button className="link-btn">Открыть все новости</button>
+      <Link to='/news'>
+        <button className="link-btn">Открыть все новости</button>
+      </Link>
     </section>
   );
 };

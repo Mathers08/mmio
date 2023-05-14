@@ -22,11 +22,15 @@ const Navbar = () => {
         },
         {
           item: 'Расписание сессии',
-          link: '/schedule-session'
+          link: '/session'
         },
         {
           item: 'Летняя практика',
-          link: '/practice'
+          link: '/summer-practice'
+        },
+        {
+          item: 'Курсовая работа',
+          link: '/coursework'
         }
       ],
       link: window.location.pathname

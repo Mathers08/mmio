@@ -1,12 +1,17 @@
 import React from 'react';
 import './Header.scss';
 import { address, burger, logo, phone, time } from '../../assets';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header__inner">
-        <div className="header__inner-logo"><img src={logo} alt="logo" /></div>
+        <div className="header__inner-logo">
+          <Link to='/'>
+            <img src={logo} alt="logo" />
+          </Link>
+        </div>
         <div className="header__inner-info">
           <div className="info__text">
             <p>Воронежский государственный университет</p>
