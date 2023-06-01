@@ -28,7 +28,6 @@ const Nir = () => {
             </p>
           </div>
         </div>
-
         <div className="nir__second">
           <h2 className="page__subheader">
             <span>Требования к НИР</span>
@@ -61,6 +60,7 @@ const Nir = () => {
             <a href={nir_title} download={nir_title}>НИР: титульный лист</a>
           </div>
         </div>
+
       </div>
     </div>
   );

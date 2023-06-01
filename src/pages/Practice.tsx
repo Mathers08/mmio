@@ -29,7 +29,6 @@ const Practice = () => {
             </div>
           </div>
         </div>
-
         <div className="practice__second">
           <h2 className="page__subheader">
             <span>Названия практик</span>
@@ -91,6 +90,7 @@ const Practice = () => {
             <a href={nir_title} download={nir_title}>ПП: титульный лист</a>
           </div>*/}
         </div>
+
       </div>
     </div>
   );

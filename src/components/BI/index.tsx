@@ -42,6 +42,9 @@ const BI: FC<BIProps> = ({ biRef }) => {
             <p>{obj.text} {/*<span>Узнать больше</span>*/}</p>
           </div>
         ))}
+
+        <div className="circle circle-right"/>
+        <div className="circle circle-left"/>
       </div>
     </section>
   );
