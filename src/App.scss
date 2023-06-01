@@ -133,7 +133,7 @@ body {
 }
 
 @mixin main-btn($main-color, $sec-color) {
-  font-size: 18px;
+  font-size: clamp(12px, 2vw, 18px);
   font-weight: 900;
   background-color: $main-color;
   color: $sec-color;

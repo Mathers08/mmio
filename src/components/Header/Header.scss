@@ -16,6 +16,10 @@ header {
       align-items: center;
       gap: 20px;
 
+      @media screen and (max-width: 612px) {
+        justify-content: space-between;
+      }
+
       &-logo {
         img {
           width: 150px;
@@ -31,9 +35,6 @@ header {
           justify-content: space-evenly;
         }
 
-        @media screen and (max-width: 536px) {
-          display: block;
-        }
 
         .info__text {
           flex: 0 1 20%;
@@ -63,10 +64,7 @@ header {
           @media screen and (max-width: 612px) {
             display: none;
           }
-          @media screen and (max-width: 536px) {
-            display: block;
-            font-size: 12px;
-          }
+
         }
 
         .info__list {
@@ -75,12 +73,16 @@ header {
           align-items: center;
           background-color: #e5e5e5;
           border-radius: 20px;
-          @media screen and (max-width: 536px) {
-            display: none;
-          }
+
           @media screen and (max-width: 612px) {
             gap: 14px;
+            cursor: pointer;
           }
+
+          @media screen and (max-width: 535px) {
+            padding: 13px;
+          }
+
 
           &-item {
             width: 100%;
@@ -91,12 +93,6 @@ header {
             @media screen and (max-width: 1110px) {
               &:nth-child(2) {
                 display: none;
-              }
-            }
-
-            @media screen and (max-width: 930px) {
-              &:nth-child(2) {
-                display: block;
               }
             }
 
@@ -111,6 +107,7 @@ header {
                 display: block;
               }
             }
+
             img {
               height: 45px;
               width: 45px;
@@ -121,10 +118,6 @@ header {
             }
 
             .item__info {
-              @media screen and (max-width: 930px) {
-                display: none;
-              }
-
               @media screen and (max-width: 905px) {
                 display: block;
               }
@@ -165,17 +158,19 @@ header {
 
       &-burger {
         display: none;
-        @media screen and (max-width: 905px) {
+
+          @media screen and (max-width: 905px) {
+          display: block;
           img {
             height: 45px;
             width: 45px;
           }
-          display: block;
         }
       }
     }
   }
 }
+
 /*
 @media screen and (max-width: 995px) {
   nav {

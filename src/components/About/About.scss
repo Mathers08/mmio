@@ -61,9 +61,10 @@
 
       &-wave {
         position: absolute;
-        left: 48%;
+        left: 50%;
         height: 118%;
-        top: -43px;
+        top: 50%;
+        transform: translate(-50%, -50%);
         /*
         border-left: 6px solid $primary;
         height: 110%;

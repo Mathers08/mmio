@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { FC, LegacyRef } from 'react';
 import './Footer.scss';
 import { address, logo, phone, telegram, time, vk, whatsapp } from "../../assets";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+interface FooterProps {
+  contactRef: LegacyRef<HTMLDivElement>;
+}
+
+const Footer: FC<FooterProps> = ({ contactRef }) => {
   return (
     <footer>
       <div className="container">
@@ -37,7 +41,7 @@ const Footer = () => {
             </div>
 
           </div>
-          <div className="footer__right">
+          <div ref={contactRef} className="footer__right">
             <div className="footer__right-item">
               <img src={phone} alt="telephone" />
               <div className="item__info">

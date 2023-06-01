@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { FC, LegacyRef } from 'react';
 import './Header.scss';
 import { address, burger, logo, phone, time } from '../../assets';
 import { Link } from "react-router-dom";
 
-const Header = () => {
+interface HeaderProps {
+  onContactClick: () => void;
+}
+
+const Header: FC<HeaderProps> = ({ onContactClick }) => {
   return (
     <header className="header">
       <div className="header__inner">
@@ -17,7 +21,7 @@ const Header = () => {
             <p>Воронежский государственный университет</p>
             <p>Факультет прикладной математики, информатики и механики</p>
           </div>
-          <div className="info__list">
+          <div onClick={onContactClick} className="info__list">
             <div className="info__list-item">
               <img src={phone} alt="phone" className="item-img" />
               <div className="item__info">
