@@ -65,13 +65,15 @@ body {
   span {
     position: relative;
     z-index: 2;
-    background-color: #f8f8f8;
+    background: linear-gradient(45deg, #2c6dd5, #5effcf);
     padding: 0 25px;
+    color: white;
+    border-radius: 20px;
   }
 }
 
 .page__header {
-  font-size: 40px;
+  font-size: clamp(20px, 5vw, 40px);
 
   &::before, &::after {
     content: "";
@@ -81,6 +83,7 @@ body {
     height: 5px;
     background-color: $primary;
     z-index: 1;
+
   }
 
   &::before {
@@ -93,7 +96,7 @@ body {
 }
 
 .page__subheader {
-  font-size: 32px;
+  font-size: clamp(16px, 4vw, 32px);
 
   &::before, &::after {
     position: absolute;

@@ -19,7 +19,7 @@ const Hero: FC<HeroProps> = ({ onBIClick }) => {
           </div>
           <div className="hero__main-link">
             <div className="main-text">Подробная информация</div>
-            <div>
+            <div className="main-btns">
               <Link to="/info">
                 <button className="main-btn">О кафедре</button>
               </Link>

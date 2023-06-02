@@ -24,6 +24,11 @@ header {
         img {
           width: 150px;
           height: 130px;
+
+          @media screen and (max-width: 477px) {
+            width: 65px;
+            height: 65px;
+          }
         }
       }
 

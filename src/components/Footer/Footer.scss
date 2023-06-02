@@ -3,13 +3,15 @@
 footer {
   background-color: #e5e5e5;
   margin-top: 50px;
+  padding-bottom: 20px;
   padding-top: 40px;
 
   .footer {
     display: flex;
     justify-content: center;
-    @media screen and (max-width: 740px) {
+    @media screen and (max-width: 872px) {
       flex-direction: column;
+      gap: 25px;
     }
 
     &__left {
@@ -18,10 +20,8 @@ footer {
       gap: 30px;
       flex: 0 0 25%;
       align-items: center;
-      @media screen and (max-width: 740px) {
-        align-items: center;
-        margin-bottom: 30px;
-        text-align: center;
+      @media screen and (max-width: 872px) {
+        display: none;
       }
 
       &-logo {
@@ -63,11 +63,14 @@ footer {
       @media screen and (max-width: 1030px) {
         flex: 0 0 50%;
       }
+      @media screen and (max-width: 872px) {
+        gap: 25px;
+      }/*
       @media screen and (max-width: 837px) {
         text-align: center;
         align-items: center;
         flex: 0 0 35%;
-      }
+      }*/
 
       &-textBlock {
         font-weight: 700;
@@ -108,8 +111,8 @@ footer {
       gap: 30px;
       flex: 0 0 25%;
       justify-content: center;
-      @media screen and (max-width: 740px) {
-        max-width: 200px;
+      @media screen and (max-width: 872px) {
+        max-width: 268px;
         margin: 0 auto;
       }
 

@@ -38,7 +38,7 @@
       }
 
       h4 {
-        font-size: 28px;
+        font-size: clamp(16px, 5vw, 28px);
         color: $primary;
         font-weight: 700;
         margin-top: 8px;
@@ -46,7 +46,7 @@
 
       p {
         margin-top: 8px;
-        font-size: 18px;
+        font-size: clamp(12px, 4vw, 18px);
         line-height: 1.2;
         letter-spacing: .4px;
 

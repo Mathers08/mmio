@@ -11,6 +11,10 @@
     margin-top: -25px;
   }
 
+  @media screen and (max-width: 477px) {
+    margin-top: -70px;
+  }
+
   .hero-img {
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,6 +23,10 @@
     max-height: 500px;
     border-radius: 35px;
     height: auto;
+
+    @media screen and (max-width: 477px) {
+      display: none;
+    }
   }
 
   .hero {
@@ -39,6 +47,16 @@
       padding: 50px 30px;
     }
 
+    @media screen and (max-width: 520px) {
+      padding: 30px;
+    }
+
+    @media screen and (max-width: 477px) {
+      background: linear-gradient(0, #f5f5f5, $primary);
+      border-radius: 35px;
+      position: initial;
+    }
+
     &__main {
       display: flex;
       flex-direction: column;
@@ -47,6 +65,10 @@
       &-greet {
         .greet-title {
           font-size: clamp(25px, 5vw, 50px);
+
+          @media screen and (max-width: 640px) {
+            display: none;
+          }
         }
 
         .greet-subtitle {
@@ -61,16 +83,27 @@
           margin-bottom: 20px;
         }
 
-        .main-btn {
-          font-size: clamp(12px, 2vw, 18px);
-          font-weight: 900;
-          background-color: $primary;
-          color: $white;
-          padding: 10px 20px;
-          border-radius: 30px;
-          transition: .2s all ease-in;
-          &:hover {
-            background-color: #1768bb50;
+        .main-btns {
+          @media screen and (max-width: 477px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 80%;
+            margin: 0 auto;
+          }
+
+          .main-btn {
+            font-size: clamp(12px, 2vw, 18px);
+            font-weight: 900;
+            background-color: $primary;
+            color: $white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: .2s all ease-in;
+
+            &:hover {
+              background-color: #1768bb50;
+            }
           }
         }
       }
