@@ -30,8 +30,10 @@ const App = () => {
     <div className="wrapper">
       <div style={{ height: 180 }}>
         <div className="container">
-          <Header onContactClick={onContactClick} />
-          <Navbar />
+          <div className='wrapper__content'>
+            <Header onContactClick={onContactClick} />
+            <Navbar />
+          </div>
         </div>
       </div>
       <Routes>

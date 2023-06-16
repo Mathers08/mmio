@@ -15,7 +15,7 @@ const Info = () => {
             <span>История кафедры</span>
           </h2>
           <div className='info__history-item'>
-            <img className="text-img" src={info} alt="" />
+            <img className="text-img" src={info} alt="ммио" />
             <p>
               Кафедра ММИО основана в 1969 году. В 1974 году кафедра была переведена с экономического факультета в
               структуру
@@ -30,7 +30,7 @@ const Info = () => {
             <span>Описание работы кафедры</span>
           </h2>
           <div className='info__about-item'>
-            <img className="text-img" src={info} alt="" />
+            <img className="text-img" src={info} alt="ммио" />
             <p>
               Преподаватели кафедры ведут основные курсы на факультете ПММ и курсы по математическому моделированию и
               прогнозированию на экономическом факультете. Кафедрой подготовлены такие курсы, как "Дискретная математика и

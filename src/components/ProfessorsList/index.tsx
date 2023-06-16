@@ -67,7 +67,7 @@ const ProfessorsList = () => {
       </h1>
       <div className="professors__list">
         {professors.map((professor) => (
-          <div className="professors__list-item">
+          <div className="professors__list-item" key={professor.name}>
             <div className="professors__list-item-img">
               <img src={professor.image} alt="" />
             </div>

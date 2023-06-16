@@ -15,7 +15,7 @@ const Practice = () => {
             <span>Сроки прохождения практик</span>
           </h2>
           <div className="practice__first-item">
-            <img className="text-img" src={info} alt="" />
+            <img className="text-img" src={info} alt="ммио" />
             <div>
               <div>
                 <h3>Прикладная математика и информатика</h3>
@@ -34,7 +34,7 @@ const Practice = () => {
             <span>Названия практик</span>
           </h2>
           <div className="practice__second-item">
-            <img className="text-img" src={info} alt="" />
+            <img className="text-img" src={info} alt="ммио" />
             <div>
               <div>
                 <h3>Прикладная математика и информатика (гр. 3, 5, 6, 7, 8)</h3>
@@ -59,7 +59,7 @@ const Practice = () => {
             <span>Руководители практик</span>
           </h2>
           <div className="practice__third-item">
-            <img className="text-img" src={info} alt="" />
+            <img className="text-img" src={info} alt="ммио" />
             <div>
               <div>
                 <h3>7 группа</h3>

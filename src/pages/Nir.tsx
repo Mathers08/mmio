@@ -15,7 +15,7 @@ const Nir = () => {
             <span>Информация о НИР</span>
           </h2>
           <div className="nir__first-item">
-            <img className="text-img" src={info} alt="" />
+            <img className="text-img" src={info} alt="ммио" />
             <p>
               Обязательными программами по всем специальностям факультета
               прикладной математики, информатики и механики Воронежского государственного университета предусмотрено
@@ -33,7 +33,7 @@ const Nir = () => {
             <span>Требования к НИР</span>
           </h2>
             <div className="nir__second-item">
-              <img className="text-img" src={info} alt="" />
+              <img className="text-img" src={info} alt="ммио" />
               <div>
                 <p>Отчет по НИР за <strong>1 семестр 4-го курса</strong> должен содержать:</p>
                 <ol>

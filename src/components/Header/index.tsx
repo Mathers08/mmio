@@ -1,6 +1,6 @@
-import React, { FC, LegacyRef } from 'react';
+import React, { FC } from 'react';
 import './Header.scss';
-import { address, burger, logo, phone, time } from '../../assets';
+import { address, logo, phone, time } from '../../assets';
 import { Link } from "react-router-dom";
 
 interface HeaderProps {
@@ -12,7 +12,7 @@ const Header: FC<HeaderProps> = ({ onContactClick }) => {
     <header className="header">
       <div className="header__inner">
         <div className="header__inner-logo">
-          <Link to='/'>
+          <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
         </div>
@@ -49,9 +49,7 @@ const Header: FC<HeaderProps> = ({ onContactClick }) => {
             </div>
           </div>
         </div>
-        <div className="header__inner-burger">
-          <img src={burger} alt="" />
-        </div>
+
       </div>
     </header>
   );

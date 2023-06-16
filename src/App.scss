@@ -55,6 +55,14 @@ body {
   &.locked {
     overflow: hidden;
   }
+
+  &__content {
+    @media screen and (max-width: 905px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
 
 .page__header, .page__subheader {

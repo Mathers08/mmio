@@ -9,6 +9,11 @@ export { default as arrowDown } from './hero/arrow-down.svg';
 export { default as hero5 } from './hero/hero5.png';
 
 export { default as actual1 } from './news/actual1.png';
+export { default as actual2 } from './news/actual2.png';
+export { default as actual3 } from './news/actual3.png';
+export { default as actual4 } from './news/actual4.png';
+export { default as actual5 } from './news/actual5.png';
+export { default as actual6 } from './news/actual6.png';
 export { default as tmp } from './about/tmp.png';
 export { default as info } from './about/info.svg';
 

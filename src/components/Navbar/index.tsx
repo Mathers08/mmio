@@ -72,27 +72,31 @@ const Navbar = () => {
       link: '/collaboration'
     },
   ];
-  const [isOpen, setIsOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
-  const toggleIsOpen = () => setIsOpen(!isOpen);
+  const onBurgerClick = () => setIsActive(!isActive);
 
   return (
-    <nav className="navbar">
-      <button className={`burger ${isOpen ? 'open' : ''}`} onClick={toggleIsOpen}></button>
-      {navbarItems.map((obj) => (
-        <div className="navbar__item">
-          <Link to={obj.link}>{obj.item}</Link>
-          {obj.subItems && <img src={chevron} alt="" />}
-          {obj.subItems && <div className="navbar__item-submenu">
-            {obj.subItems.map((obj) => (
-              <Link to={obj.link}>
-                <img src={info} alt="" />
-                <div className="submenu-item">{obj.item}</div>
-              </Link>
-            ))}
-          </div>}
-        </div>
-      ))}
+    <nav className="navbar__section">
+      <div className={isActive ? 'navbar navbar-active' : 'navbar'}>
+        {navbarItems.map((obj) => (
+          <div className="navbar__item">
+            <Link to={obj.link}>{obj.item}</Link>
+            {obj.subItems && <img src={chevron} alt="" />}
+            {obj.subItems && <div className="navbar__item-submenu">
+              {obj.subItems.map((obj) => (
+                <Link to={obj.link}>
+                  <img src={info} alt="ммио" />
+                  <div className="submenu-item">{obj.item}</div>
+                </Link>
+              ))}
+            </div>}
+          </div>
+        ))}
+      </div>
+      <div onClick={onBurgerClick} className={isActive ? 'burger burger-active' : 'burger'}>
+        <span></span>
+      </div>
     </nav>
   );
 };

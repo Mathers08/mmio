@@ -13,7 +13,7 @@ const EmptyPage: FC<EmptyPageProps> = ({ pageTitle }) => {
         <span>{pageTitle}</span>
       </h1>
       <div className="empty-page-info">
-        <img src={info} alt="" />
+        <img src={info} alt="ммио" />
         <p>На данный момент информация отсутствует!</p>
       </div>
     </div>

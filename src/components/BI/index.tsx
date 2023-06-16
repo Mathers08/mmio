@@ -33,7 +33,7 @@ const BI: FC<BIProps> = ({ biRef }) => {
   return (
     <section ref={biRef} className="bi">
       <img className="bi__bg" src={gerb} alt="" />
-      <h1 className="page__header"><span>Бизнес-информатика</span></h1>
+      <h2 className="page__header"><span>Бизнес-информатика</span></h2>
       <div className="bi__content">
         {biItems.map(obj => (
           <div className="bi__content-item">
