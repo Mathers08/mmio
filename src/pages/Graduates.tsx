@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.scss';
 import { info } from "../assets";
 
 const Graduates = () => {
@@ -31,7 +32,11 @@ const Graduates = () => {
               <p><strong>Написать нам можно по электронному адресу, указанному на главной странице.</strong></p>
             </div>
           </div>
+
+          <div className="circle circle-right" />
+          <div className="circle circle-left" />
         </div>
+
       </div>
     </div>
   );

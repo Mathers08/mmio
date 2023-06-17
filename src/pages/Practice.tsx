@@ -81,16 +81,10 @@ const Practice = () => {
             <img src={pdf} alt="" />
             <a href={nir_rules} target="_blank">ПП: правила оформления</a>
           </div>
-          {/*<div className="practice__links-item">
-            <img src={pdf} alt="" />
-            <a href={nir_example} target="_blank">ПП: пример отчета</a>
-          </div>
-          <div className="practice__links-item">
-            <img src={word} alt="" />
-            <a href={nir_title} download={nir_title}>ПП: титульный лист</a>
-          </div>*/}
         </div>
 
+        <div className="circle circle-right" />
+        <div className="circle circle-left" />
       </div>
     </div>
   );

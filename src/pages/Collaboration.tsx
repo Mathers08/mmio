@@ -53,6 +53,9 @@ const Collaboration = () => {
           </h2>
           <UserForm />
         </div>
+
+        <div className="circle circle-right" />
+        <div className="circle circle-left" />
       </div>
     </div>
   );

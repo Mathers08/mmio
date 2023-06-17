@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.scss';
 import { info } from "../assets";
 
 const Masters = () => {
@@ -37,6 +38,8 @@ const Masters = () => {
             </div>
           </div>
         </div>
+        <div className="circle circle-right" />
+        <div className="circle circle-left" />
       </div>
     </div>
   );
