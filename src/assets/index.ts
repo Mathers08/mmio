@@ -6,7 +6,7 @@ export { default as chevron } from './header/chevron.svg';
 export { default as burger } from './header/burger.svg';
 
 export { default as arrowDown } from './hero/arrow-down.svg';
-export { default as hero5 } from './hero/hero5.png';
+export { default as hero2 } from './hero/hero2.jpg';
 
 export { default as actual1 } from './news/actual1.png';
 export { default as actual2 } from './news/actual2.png';

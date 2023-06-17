@@ -1,6 +1,6 @@
 @import "../App";
 
-.nir, .info, .practice {
+.nir, .info, .practice, .collaboration {
   margin: 30px 0;
   font-size: 20px;
   text-align: justify;
@@ -46,9 +46,7 @@
 
 .nir {
   &__second {
-    ol {
-      margin: 15px 70px;
-    }
+
   }
 }
 
@@ -161,4 +159,8 @@
       opacity: .3;
     }
   }
+}
+
+ol, ul {
+  margin: 15px 70px;
 }

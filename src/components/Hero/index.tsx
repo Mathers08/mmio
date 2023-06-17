@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import './Hero.scss';
 import { Link } from "react-router-dom";
-import { hero5 } from "../../assets";
+import { hero2 } from "../../assets";
 
 interface HeroProps {
   onBIClick: () => void;
@@ -10,7 +10,7 @@ interface HeroProps {
 const Hero: FC<HeroProps> = ({ onBIClick }) => {
   return (
     <section className="hero__section">
-      <img className='hero-img' src={hero5} alt="" />
+      <img className='hero-img' src={hero2} alt="" />
       <div className="hero">
         <div className="hero__main">
           <div className="hero__main-greet">

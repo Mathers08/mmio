@@ -12,6 +12,7 @@
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: -1;
   }
 
   &__header {
@@ -50,9 +51,11 @@
         line-height: 1.2;
         letter-spacing: .4px;
 
-        span {
-          text-decoration: underline;
-          cursor: pointer;
+        a {
+          span {
+            text-decoration: underline;
+            cursor: pointer;
+          }
         }
       }
     }

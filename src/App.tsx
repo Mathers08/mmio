@@ -2,16 +2,16 @@ import React, { useRef } from "react";
 import './App.scss';
 import { Route, Routes } from "react-router-dom";
 import {
+  Applicants,
   Collaboration,
-  Coursework,
-  Diploma,
+  Diploma, Graduates,
   Home,
-  Info,
+  Info, Masters,
   News,
   Nir,
   Practice,
   Professors,
-  Schedule,
+  Schedule, SecondDegree,
   Session,
   SummerPractice
 } from "./pages";
@@ -41,8 +41,10 @@ const App = () => {
         <Route path="/news" element={<News />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/session" element={<Session />} />
-        <Route path="/summer-practice" element={<SummerPractice />} />
-        <Route path="/coursework" element={<Coursework />} />
+        <Route path="/masters" element={<Masters />} />
+        <Route path="/second-degree" element={<SecondDegree />} />
+        <Route path="/graduates" element={<Graduates />} />
+        <Route path="/applicants" element={<Applicants />} />
         <Route path="/nir" element={<Nir />} />
         <Route path="/practice" element={<Practice />} />
         <Route path="/diploma" element={<Diploma />} />

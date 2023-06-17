@@ -10,34 +10,16 @@ const Navbar = () => {
       link: '/'
     },
     {
-      item: 'Новости',
-      link: '/news'
+      item: 'Абитуриентам',
+      link: '/applicants'
     },
     {
       item: 'Студентам',
       subItems: [
         {
-          item: 'Расписание занятий',
-          link: '/schedule'
-        },
-        {
           item: 'Расписание сессии',
           link: '/session'
         },
-        {
-          item: 'Летняя практика',
-          link: '/summer-practice'
-        },
-        {
-          item: 'Курсовая работа',
-          link: '/coursework'
-        }
-      ],
-      link: window.location.pathname
-    },
-    {
-      item: 'Выпускникам',
-      subItems: [
         {
           item: 'НИР',
           link: '/nir'
@@ -47,11 +29,19 @@ const Navbar = () => {
           link: '/practice'
         },
         {
-          item: 'Диплом',
-          link: '/diploma'
+          item: 'Магистратура',
+          link: '/masters'
+        },
+        {
+          item: 'Второе высшее',
+          link: '/second-degree'
         },
       ],
       link: window.location.pathname
+    },
+    {
+      item: 'Выпускники',
+      link: '/graduates'
     },
     {
       item: 'О кафедре',
