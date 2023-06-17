@@ -50,9 +50,9 @@ const Info = () => {
               кафедры проходят стажировку в специализированных летних школах Германии и Италии.
             </p>
           </div>
-          <Link to='/professors'>
+          {/*<Link to='/professors'>
             <button className='link-btn'>Список преподавателей</button>
-          </Link>
+          </Link>*/}
         </div>
       </div>
     </div>

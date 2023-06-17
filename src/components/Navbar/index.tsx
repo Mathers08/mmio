@@ -45,7 +45,7 @@ const Navbar = () => {
     },
     {
       item: 'О кафедре',
-      subItems: [
+     /* subItems: [
         {
           item: 'Информация',
           link: '/info'
@@ -54,8 +54,8 @@ const Navbar = () => {
           item: 'Преподаватели',
           link: '/professors'
         }
-      ],
-      link: window.location.pathname
+      ],*/
+      link: '/info'
     },
     {
       item: 'Сотрудничество',

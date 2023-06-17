@@ -50,10 +50,10 @@ const MainNews = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div>{/*
       <Link to='/news'>
         <button className="link-btn">Открыть все новости</button>
-      </Link>
+      </Link>*/}
     </section>
   );
 };
