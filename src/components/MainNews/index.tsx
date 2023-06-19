@@ -7,32 +7,32 @@ const MainNews = () => {
   const items = [
     {
       id: 1,
-      title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      title: 'Приемная комиссия 2023 года начинается 19 июня.',
       img: actual1
     },
     {
       id: 2,
-      title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      title: 'С 14 июня начинается защита дипломных работ выпускников факультета ПММ.',
       img: actual2
     },
     {
       id: 3,
-      title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      title: 'Мастер-классы факультета ПММ для школьников состоится 29 апреля в 16:00.',
       img: actual3
     },
     {
       id: 4,
-      title: 'Lorem ipsum dolor.',
+      title: 'Олимпиада по информатике и программированию первокурсников.',
       img: actual4,
     },
     {
       id: 5,
-      title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      title: 'Очередное заседание кафедры ММИО состоится в четверг 24 ноября в 17:00.',
       img: actual5
     },
     {
       id: 6,
-      title: 'Lorem ipsum.',
+      title: 'Заседание кафедры ММИО, посвященное началу учебного года, состоится 31 августа.',
       img: actual6
     },
   ];
