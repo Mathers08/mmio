@@ -25,12 +25,12 @@ const Footer: FC<FooterProps> = ({ contactRef }) => {
                 <p><a href="https://www.vsu.ru/" target="_blank">Сайт ВГУ</a></p>
                 <p><a href="http://www.amm.vsu.ru/" target="_blank">Сайт ПММ</a></p>
                 <p><Link to='/info'>О кафедре</Link></p>
-                <p><Link to='/professors'>Преподаватели</Link></p>
+                <p><Link to='/practice'>Практика</Link></p>
               </div>
               <div className="textBlock-item">
-                <p><Link to='/schedule'>Расписание</Link></p>
-                <p><Link to='/news'>Новости</Link></p>
-                <p><Link to='/practice'>Практика</Link></p>
+                <p><Link to='/applicants'>Абитуриентам</Link></p>
+                <p><Link to='/masters'>Магистратура</Link></p>
+                <p><Link to='/second-degree'>Второе высшее</Link></p>
                 <p><Link to='/collaboration'>Сотрудничество</Link></p>
               </div>
             </div>
